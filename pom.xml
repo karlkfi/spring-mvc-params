@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>karlkfi</groupId>
   <artifactId>spring-mvc-params</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.0</version>
   <name>Spring MVC Params</name>
   <description>Spring RequestHandler method parameter injection annotations.</description>
   <url>https://github.com/karlkfi/spring-mvc-params</url>
@@ -40,20 +40,15 @@
 			<version>15.0</version>
 		</dependency>
 		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>3.1.0</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>3.2.4.RELEASE</version>
 		</dependency>
 		<dependency>
-			<groupId>com.google.code.findbugs</groupId>
-			<artifactId>jsr305</artifactId>
-			<version>2.0.1</version>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
