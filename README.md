@@ -19,20 +19,24 @@ public class AutowiredParamController {
 	/**  
 	 * Handles A requests
 	 * @param param an example url parameter
-	 * @param messageSource the MessageSource from the application context, injected by type (MessageSource)
+	 * @param messageSource the MessageSource from the application context, 
+	 * 						injected by type (MessageSource)
 	 */
 	@RequestMapping("/requestA")
-	public void handleRequest(@RequestParam("param") String param, @AutowiredParam MessageSource messageSource) {
+	public void handleRequest(@RequestParam("param") String param, 
+							  @AutowiredParam MessageSource messageSource) {
 		...
 	}
 	
 	/**  
 	 * Handles B requests
 	 * @param param an example url parameter
-	 * @param messageSource the ExpensiveService from the application context, injected by name ("namedService")
+	 * @param messageSource the ExpensiveService from the application context, 
+	 * 						injected by name ("namedService")
 	 */
 	@RequestMapping("/requestB")
-	public void handleRequest(@RequestParam("param") String param, @ResourceParam ExpensiveService namedService) {
+	public void handleRequest(@RequestParam("param") String param, 
+							  @ResourceParam ExpensiveService namedService) {
 		...
 	}
 	
