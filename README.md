@@ -59,9 +59,9 @@ Custom <a href="http://docs.spring.io/spring/docs/3.2.x/javadoc-api/org/springfr
 public class ExampleConfig extends WebMvcConfigurerAdapter {
 	
 	/**
-	 * Add ResourceArgumentResolver as a custom HandlerMethodArgumentResolver.
-	 * Unfortunately addArgumentResolvers doesn't allow specifying the ArgumentResolver ordering. :(
-	 * @param argumentResolvers an initially empty list of custom resolvers to insert into the default resolver list
+	 * Adds custom HandlerMethodArgumentResolvers.
+	 * The {@code argumentResolvers} list is updated to add new resolvers.
+	 * @param argumentResolvers the list of custom resolvers to update
 	 */
 	@Override
     public void addArgumentResolvers(List<HandlerMethodArgumentResolver> argumentResolvers) {
