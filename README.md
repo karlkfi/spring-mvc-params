@@ -31,7 +31,7 @@ public class AutowiredParamController {
 	/**  
 	 * Handles B requests
 	 * @param param an example url parameter
-	 * @param messageSource the ExpensiveService from the application context, 
+	 * @param namedService the ExpensiveService from the application context, 
 	 * 						injected by name ("namedService")
 	 */
 	@RequestMapping("/requestB")
